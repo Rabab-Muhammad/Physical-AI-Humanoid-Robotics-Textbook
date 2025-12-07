@@ -10,13 +10,13 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://your-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // For GitHub pages deployment, it is '/<projectName>/'
+  baseUrl: '/Hackathon-2025-Textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Rabab-Muhammad', // Usually your GitHub org/user name.
-  projectName: 'Physical-AI-and-Humanoid-Robotics', // Usually your repo name.
+  projectName: 'Hackathon-2025-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
