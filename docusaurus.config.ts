@@ -14,7 +14,7 @@ const config: Config = {
   },
 
   url: 'https://physical-ai-humanoid-robotics-textb-rho-five.vercel.app',
-  baseUrl: '/textbook/',
+  baseUrl: '/',
 
   organizationName: 'Rabab-Muhammad',
   projectName: 'Physical-AI-Humanoid-Robotics-Textbook',
