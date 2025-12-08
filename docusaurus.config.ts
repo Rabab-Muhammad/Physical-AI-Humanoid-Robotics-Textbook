@@ -13,11 +13,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://rabab-muhammad.github.io',
+  baseUrl: '/Physical-AI-Humanoid-Robotics-Textbook/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'Rabab-Muhammad',
+  projectName: 'Physical-AI-Humanoid-Robotics-Textbook',
 
   onBrokenLinks: 'throw',
 
