@@ -13,8 +13,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://rabab-muhammad.github.io',
-  baseUrl: '/Physical-AI-Humanoid-Robotics-Textbook/',
+  url: 'https://your-vercel-domain.vercel.app',
+  baseUrl: '/',
 
   organizationName: 'Rabab-Muhammad',
   projectName: 'Physical-AI-Humanoid-Robotics-Textbook',
