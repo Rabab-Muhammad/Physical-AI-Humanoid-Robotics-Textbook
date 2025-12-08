@@ -2,28 +2,32 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 const config: Config = {
-  title: 'Physical AI and Humanoid Robotics',
-  tagline: 'A Complete AI-Native Engineering Curriculum',
+  title: 'Physical AI & Humanoid Robotics',
+  tagline: 'A complete and practical learning system where you master the future: humanoid robotics, ROS 2, large action models, simulation, VLA systems, hardware, and advanced AI for next-generation intelligent machines.',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-site.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is '/<projectName>/'
-  baseUrl: '/Hackathon-2025-Textbook/',
+  future: {
+    v4: true,
+  },
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Rabab-Muhammad', // Usually your GitHub org/user name.
-  projectName: 'Hackathon-2025-Textbook', // Usually your repo name.
+  url: 'https://your-docusaurus-site.example.com',
+  baseUrl: '/',
+
+  organizationName: 'facebook',
+  projectName: 'docusaurus',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // ✅ FIX ADDED HERE
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -35,17 +39,20 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Rabab-Muhammad/Physical-AI-and-Humanoid-Robotics',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
           editUrl:
-            'https://github.com/Rabab-Muhammad/Physical-AI-and-Humanoid-Robotics',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -55,12 +62,14 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Physical AI & Humanoid Robotics',
       logo: {
-        alt: 'Physical AI and Humanoid Robotics Logo',
+        alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -85,7 +94,7 @@ const config: Config = {
           items: [
             {
               label: 'Textbook',
-              to: '/docs/modules/physical-ai-foundations',
+              to: '/docs/intro',
             },
           ],
         },
@@ -93,16 +102,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: '/',
+              label: 'Stack Overflow',
+              to: '/',
             },
             {
-              label: 'Twitter',
-              href: '/',
+              label: 'Discord',
+              to: '/',
             },
             {
-              label: 'LinkedIn',
-              href: '/',
+              label: 'X',
+              to: '/',
             },
           ],
         },
@@ -116,7 +125,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © 2025 Physical AI and Humanoid Robotics Built with ❤️ by Rabab Muhammad Hussain`,
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with ❤️ by Rabab Muhammad Hussain`,
     },
     prism: {
       theme: prismThemes.github,

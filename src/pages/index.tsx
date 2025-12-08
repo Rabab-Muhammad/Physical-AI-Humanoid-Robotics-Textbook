@@ -123,7 +123,7 @@ function JourneySection() {
             </p>
             <div className={clsx('text--center', styles.journeyButton)}>
               <Link
-                className="button button--primary button--lg"
+                className="button button--secondary button--lg"
                 to="/docs/intro">
                 Start Learning →
               </Link>
@@ -134,6 +134,7 @@ function JourneySection() {
     </section>
   );
 }
+
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
