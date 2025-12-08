@@ -13,7 +13,7 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-vercel-domain.vercel.app',
+  url: 'url: https://physical-ai-humanoid-robotics-textb-rho-five.vercel.app',
   baseUrl: '/',
 
   organizationName: 'Rabab-Muhammad',
